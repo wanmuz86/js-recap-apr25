@@ -36,3 +36,23 @@ let z = 10;
 console.log(z);
 
 
+// Arrow notation function
+
+function add(a, b) {
+  return a + b;
+}
+
+console.log(add(10, 3));
+
+// Arrow function version
+// For single-line functions, 'return' and curly braces can be omitted
+// The 'function' keyword is replaced with =>
+const sum = (a, b) => a + b;
+console.log(sum(3, 3));
+
+// Exercise : 
+const sumOfSquares = (a,b) => a**2 + b**2;
+console.log(sumOfSquares(3,4));
+
+
+
