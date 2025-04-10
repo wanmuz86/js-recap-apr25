@@ -35,3 +35,27 @@ console.log("Impl:",answers2);
 // For each val in the array, verify that fhe following condition is fulfiled : val %2 === 0
 const answer2Decl = numbers.filter(val=> val %2 === 0);
 console.log("Decl: ", answer2Decl)
+
+// Declarative programming
+
+const numbers = [1,2,3,4,5];
+// Ex in imperative programming
+
+let answers3 = 0;
+
+for (let i = 0; i < numbers.length; i++){
+  answers3 += numbers[i];
+}
+
+console.log("imperative: ",answers3);
+
+// foreach val in the array, add it to acc
+// acc = 0 (by default)
+// 0 + 1
+// 1 + 2
+// 3 + 3
+// 6 + 4
+// 10 + 5
+// You may override acc, eg : const answers3decl = numbers.reduce((acc,val)=> acc+val,20);
+const answers3decl = numbers.reduce((acc,val)=> acc+val);
+console.log("declarative:",answers3decl)
