@@ -55,4 +55,28 @@ const sumOfSquares = (a,b) => a**2 + b**2;
 console.log(sumOfSquares(3,4));
 
 
+// Array destructuring example
+
+const numbers = [1,2,3];
+
+// Destructure the array into individual variables
+// 'first' gets 1, 'second' gets 2, and 'third' gets 3
+const [first,second,third] = numbers;
+ 
+console.log(first); // Output:1
+console.log(second);// Output:2
+console.log(third); // Output:3
+
+// Object destructuring
+const info  = {"name":"Muzaffar","profession":"trainer","age":30};
+
+// Destructure the object into individual variables
+// 'name' gets "Muzaffar", 'profession' gets "Trainer", and 'age' gets '30'
+const {name, profession, age} = info;
+
+console.log(name); // Output:Muzaffar
+console.log(profession); // Output:Trainer
+console.log(age); // Output:30
+
+
 
