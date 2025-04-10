@@ -79,4 +79,43 @@ console.log(profession); // Output:Trainer
 console.log(age); // Output:30
 
 
+/// Spread operators [on an array]
+
+const array1 = [1,2,3];
+
+// Spread operator -> spread the content of array1 1,2,3 and combine it with new elements, 4,5 to create
+// a new aray2
+const array2 = [...array1, 4,5]; // [1,2,3,4,5]
+console.log(array2);
+
+const array3 = [...array1,...array2];
+console.log(array3);  // combination of array1 and array2 [1,2,3,1,2,3,4,5]
+
+/// Spread operator [on an object]
+
+const obj1 = {"name":"John", "age":20, "location":"KL"}
+const obj2 = {"profession":"student","hobby":"watch football"}
+
+// combining two objects
+const obj3 = {...obj1, ...obj2};
+console.log(obj3);
+
+// To update the information from the first object
+// In this case, the right key-value pair will override the one in left
+const updatedObj1 = {...obj1, "age":30};
+console.log(updatedObj1);
+
+// rest parameter [called in a function]
+
+const sumArray = (...arr1) => {
+  let answer = 0;
+  for (let i =0; i < arr1.length;i++){
+    answer+= arr1[i];
+  }
+  return answer;
+}
+
+console.log(sumArray(1,2,3));
+console.log(sumArray(1,2,3,4,5));
+console.log(sumArray(1,2,3,4,5,6,7,8,9,10));
 
